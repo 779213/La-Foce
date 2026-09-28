@@ -21,7 +21,7 @@ html { scroll-behavior: smooth; background: var(--cream); }
 body {
     color: var(--ink);
     background: var(--cream);
-    font-family: var(--sans);
+    /*font-family: var(--sans);*/
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -59,7 +59,7 @@ button { font: inherit; }
 .eyebrow.gold { color: var(--gold-light); }
 
 h1, h2, h3, blockquote {
-    font-family: var(--serif);
+    /*font-family: var(--serif);*/
     font-weight: 500;
     line-height: .98;
 }
