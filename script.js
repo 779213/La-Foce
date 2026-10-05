@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (loader) {
             loader.classList.add("hidden");
         }
+        if (header) {
+            header.classList.add("ready");
+        }
     }
 
     window.addEventListener("load", function () {
@@ -299,4 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("La Foce Premium - JavaScript caricato correttamente.");
 
+
+
 });
+

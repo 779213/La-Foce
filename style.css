@@ -96,7 +96,13 @@ h2 em { font-style: italic; color: var(--gold); }
     justify-content: space-between;
     padding: 22px 42px;
     color: var(--white);
-    transition: background .35s ease, padding .35s ease, color .35s ease, box-shadow .35s ease;
+    opacity: 0;
+    transition: opacity .5s ease, background .35s ease, padding .35s ease, color .35s ease, box-shadow .35s ease;
+    /*transition: background .35s ease, padding .35s ease, color .35s ease, box-shadow .35s ease;*/
+}
+
+.site-header.ready {
+    opacity: 1;
 }
 
 .site-header.scrolled {
