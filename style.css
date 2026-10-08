@@ -746,6 +746,54 @@ h2 em {
     object-position: center 60%;
 }
 
+/* EVENTI */
+.events {
+    padding: 150px 0;
+    background: var(--paper);
+}
+
+.events-head {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 60px;
+}
+
+.events-head h2 {
+    margin-bottom: 18px;
+}
+
+.events-head p {
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.events-grid figure {
+    overflow: hidden;
+}
+
+.events-grid img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform .7s ease;
+}
+
+.events-grid figure:hover img {
+    transform: scale(1.04);
+}
+
+.events-grid figcaption {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: .82rem;
+}
+
+
 /* CHEF */
 .chef {
     padding: 150px 0 170px;
@@ -1070,11 +1118,13 @@ footer {
     gap: 14px;
     margin-top: 12px;
 }
+
 .footer-socials a {
-    color: rgba(255,253,248,.6);
+    color: rgba(255, 253, 248, .6);
     display: inline-flex;
     transition: color .2s ease;
 }
+
 .footer-socials a:hover {
     color: var(--gold);
 }
@@ -1083,7 +1133,16 @@ footer {
 @media (max-width: 860px) {
     .reviews-grid {
         grid-template-columns: 1fr;
+
+        .events {
+            padding: 105px 0;
+        }
+
+        .events-grid {
+            grid-template-columns: 1fr 1fr;
+        }
     }
+
 }
 
 @media (max-width: 600px) {
@@ -1180,6 +1239,10 @@ footer {
     .gallery-large, .gallery-wide {
         grid-column: auto;
         grid-row: auto;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
     }
 
     .reviews-section {
